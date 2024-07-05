@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.thermometer {
+    position: relative;
+    height: 300px;
+    width: 50px;
+    margin: 0 auto;
+    background: lightgray;
+    border-radius: 25px;
+}
+
+.slider {
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.temperature-indicator {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.ticks {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin: 10px auto;
+}
+
+.tick {
+    font-size: 14px;
+}
